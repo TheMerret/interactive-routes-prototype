@@ -1,11 +1,18 @@
-import StatusBar from '../components/StatusBar';
+import { useNavigate, useParams } from 'react-router-dom';
+import { routes } from '../data/routes';
+import { useGame } from '../context/GameContext';
 
-export default function RouteCompleteScreen({ route, score, onBack }) {
+export default function RouteCompleteScreen() {
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+  const { score } = useGame();
+
+  const route = routes.find(r => r.id === id);
+  if (!route) return null;
+
   return (
-    <div style={{ background: '#f5f5f5', height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <StatusBar />
+    <div style={{ background: '#f5f5f5', height: '100vh', display: 'flex', flexDirection: 'column' }}>
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px 32px', textAlign: 'center' }}>
-
         <div style={{ fontSize: 64, marginBottom: 16 }}>🏆</div>
 
         <h2 style={{ fontFamily: "'GuanoApes', cursive", fontSize: 46, letterSpacing: 3, margin: '0 0 12px', lineHeight: 1.1 }}>
@@ -31,18 +38,12 @@ export default function RouteCompleteScreen({ route, score, onBack }) {
         </div>
 
         <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: 12 }}>
-          <button style={{
-            height: 56, borderRadius: 20, background: '#b1b1b1',
-            border: 'none', fontSize: 17, fontWeight: 500, cursor: 'pointer',
-          }}>
+          <button style={{ height: 56, borderRadius: 20, background: '#b1b1b1', border: 'none', fontSize: 17, fontWeight: 500, cursor: 'pointer' }}>
             Поделиться маршрутом
           </button>
           <button
-            onClick={onBack}
-            style={{
-              height: 56, borderRadius: 20, background: '#d9d9d9',
-              border: 'none', fontSize: 17, fontWeight: 500, cursor: 'pointer',
-            }}
+            onClick={() => navigate('/routes')}
+            style={{ height: 56, borderRadius: 20, background: '#d9d9d9', border: 'none', fontSize: 17, fontWeight: 500, cursor: 'pointer' }}
           >
             Ещё маршруты
           </button>
