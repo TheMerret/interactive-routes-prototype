@@ -60,7 +60,7 @@ export default function RoutesListScreen({ routes, onSelectRoute }) {
       <div style={{ overflowY: 'auto', flex: 1, paddingBottom: 83 }}>
         {/* Header */}
         <div style={{ padding: '8px 24px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
-          <h2 style={{ fontFamily: "'Caveat', cursive", fontSize: 40, letterSpacing: 2, margin: 0 }}>Маршруты</h2>
+          <h2 style={{ fontFamily: "'GuanoApes', cursive", fontSize: 40, letterSpacing: 2, margin: 0 }}>Маршруты</h2>
           <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 15, paddingBottom: 4 }}>
             <svg width="14" height="18" viewBox="0 0 14 18" fill="none">
               <path d="M7 0C3.69 0 1 2.69 1 6c0 4.5 6 12 6 12s6-7.5 6-12c0-3.31-2.69-6-6-6zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="#333"/>

@@ -28,7 +28,7 @@ export default function TaskScreen({ waypoint, waypointIndex, onSubmit, onExit }
 
       {/* Title */}
       <div style={{ padding: '8px 24px 0', textAlign: 'center' }}>
-        <h2 style={{ fontFamily: "'Caveat', cursive", fontSize: 38, letterSpacing: 2, margin: 0 }}>
+        <h2 style={{ fontFamily: "'GuanoApes', cursive", fontSize: 38, letterSpacing: 2, margin: 0 }}>
           Задание {waypointIndex}
         </h2>
       </div>

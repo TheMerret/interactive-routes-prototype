@@ -9,7 +9,7 @@ export default function RouteDetailScreen({ route, onBack, onStart }) {
         {/* Nav row */}
         <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '8px 24px' }}>
           <button onClick={onBack} style={circleBtn}>‹</button>
-          <h2 style={{ fontFamily: "'Caveat', cursive", fontSize: 36, letterSpacing: 2, margin: 0, textAlign: 'center', maxWidth: 260, lineHeight: 1.1 }}>
+          <h2 style={{ fontFamily: "'GuanoApes', cursive", fontSize: 36, letterSpacing: 2, margin: 0, textAlign: 'center', maxWidth: 260, lineHeight: 1.1 }}>
             {route.title}
           </h2>
           <button style={{ ...circleBtn, position: 'absolute', right: 24 }}>
@@ -49,7 +49,7 @@ export default function RouteDetailScreen({ route, onBack, onStart }) {
             onClick={onStart}
             style={{
               flex: 1, height: 56, background: '#b1b1b1', border: 'none', borderRadius: 20, cursor: 'pointer',
-              fontFamily: "'Caveat', cursive", fontSize: 34, letterSpacing: 4,
+              fontFamily: "'GuanoApes', cursive", fontSize: 34, letterSpacing: 4,
             }}
           >
             В путь!

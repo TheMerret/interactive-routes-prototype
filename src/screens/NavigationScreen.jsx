@@ -38,7 +38,7 @@ export default function NavigationScreen({ waypoint, waypointIndex, totalWaypoin
 
       {/* Title */}
       <div style={{ padding: '8px 24px 0', textAlign: 'center' }}>
-        <h2 style={{ fontFamily: "'Caveat', cursive", fontSize: 38, letterSpacing: 2, margin: 0 }}>Куда идти?</h2>
+        <h2 style={{ fontFamily: "'GuanoApes', cursive", fontSize: 38, letterSpacing: 2, margin: 0 }}>Куда идти?</h2>
         <p style={{ fontSize: 13, color: '#888', margin: '4px 0 0', fontWeight: 400 }}>{waypoint.location}</p>
       </div>
 

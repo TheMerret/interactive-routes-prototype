@@ -15,7 +15,7 @@ export default function TaskResultScreen({ waypoint, isCorrect, isLast, onNext }
           {isCorrect ? '✓' : '✗'}
         </div>
 
-        <h2 style={{ fontFamily: "'Caveat', cursive", fontSize: 46, letterSpacing: 3, margin: '0 0 12px', textAlign: 'center' }}>
+        <h2 style={{ fontFamily: "'GuanoApes', cursive", fontSize: 46, letterSpacing: 3, margin: '0 0 12px', textAlign: 'center' }}>
           {isCorrect ? 'Верно!' : 'Не совсем…'}
         </h2>
 

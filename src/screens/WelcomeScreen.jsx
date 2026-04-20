@@ -8,7 +8,7 @@ export default function WelcomeScreen({ onContinue }) {
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '0 0 40px' }}>
         <div style={{ padding: '200px 47px 0' }}>
           <h1 style={{
-            fontFamily: "'Caveat', cursive",
+            fontFamily: "'GuanoApes', cursive",
             fontSize: 58, fontWeight: 700,
             letterSpacing: 3, lineHeight: 1.1,
             margin: 0,

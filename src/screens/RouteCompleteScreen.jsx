@@ -8,7 +8,7 @@ export default function RouteCompleteScreen({ route, score, onBack }) {
 
         <div style={{ fontSize: 64, marginBottom: 16 }}>🏆</div>
 
-        <h2 style={{ fontFamily: "'Caveat', cursive", fontSize: 46, letterSpacing: 3, margin: '0 0 12px', lineHeight: 1.1 }}>
+        <h2 style={{ fontFamily: "'GuanoApes', cursive", fontSize: 46, letterSpacing: 3, margin: '0 0 12px', lineHeight: 1.1 }}>
           Маршрут<br />пройден!
         </h2>
 

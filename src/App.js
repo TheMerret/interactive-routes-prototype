@@ -61,31 +61,9 @@ export default function App() {
   };
 
   return (
-    <>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap');
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-        body { background: #c8c8c8; font-family: -apple-system, 'Helvetica Neue', sans-serif; }
-        button { font-family: inherit; }
-        @media (max-width: 450px) {
-          body { background: #f5f5f5; }
-          .phone-frame { width: 100vw !important; height: 100dvh !important; border-radius: 0 !important; box-shadow: none !important; }
-        }
-      `}</style>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-        <div
-          className="phone-frame"
-          style={{
-            width: 393, height: 852,
-            borderRadius: 54, overflow: 'hidden',
-            position: 'relative', flexShrink: 0,
-            boxShadow: '0 0 0 12px #1a1a1a, 0 0 0 14px #444, 0 40px 100px rgba(0,0,0,.55)',
-          }}
-        >
-          <ScreenRouter {...props} />
-        </div>
-      </div>
-    </>
+    <div style={{ width: '100%', minHeight: '100vh', background: '#f5f5f5' }}>
+      <ScreenRouter {...props} />
+    </div>
   );
 }
 
