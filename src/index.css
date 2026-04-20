@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'GuanoApes';
-  src: url('/fonts/GuanoApes.otf') format('opentype');
+  src: url('./fonts/GuanoApes.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
