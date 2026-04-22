@@ -73,12 +73,18 @@ export default function NavigationScreen() {
       </div>
 
       {/* CTA */}
-      <div style={{ padding: '16px 24px 40px' }}>
+      <div style={{ padding: '16px 24px 40px', display: 'flex', flexDirection: 'column', gap: 10 }}>
         <button
           onClick={() => navigate(`/routes/${id}/task/${wpIndex}`)}
           style={{ width: '100%', height: 56, background: '#b1b1b1', border: 'none', borderRadius: 20, fontSize: 17, fontWeight: 500, cursor: 'pointer' }}
         >
           Получить задание
+        </button>
+        <button
+          onClick={() => navigate(`/routes/${id}/fork/${wpIndex}`)}
+          style={{ width: '100%', height: 56, background: '#dedede', border: 'none', borderRadius: 20, fontSize: 17, fontWeight: 500, cursor: 'pointer' }}
+        >
+          Развилка
         </button>
       </div>
     </div>

@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 export default function WelcomeScreen() {
   const navigate = useNavigate();
-  const go = () => navigate('/routes');
 
   return (
     <div style={{ background: '#f5f5f5', height: '100vh', position: 'relative', display: 'flex', flexDirection: 'column' }}>
@@ -15,9 +14,9 @@ export default function WelcomeScreen() {
         </div>
 
         <div style={{ padding: '0 71px', display: 'flex', flexDirection: 'column', gap: 14 }}>
-          <button onClick={go} style={btn('#aaa')}>Войти</button>
-          <button onClick={go} style={btn('#d9d9d9')}>Зарегистрироваться</button>
-          <button onClick={go} style={{ background: 'none', border: 'none', fontSize: 20, fontWeight: 300, cursor: 'pointer', marginTop: 8 }}>
+          <button onClick={() => navigate('/routes')} style={btn('#aaa')}>Войти</button>
+          <button onClick={() => navigate('/city')} style={btn('#d9d9d9')}>Зарегистрироваться</button>
+          <button onClick={() => navigate('/routes')} style={{ background: 'none', border: 'none', fontSize: 20, fontWeight: 300, cursor: 'pointer', marginTop: 8 }}>
             Продолжить без регистрации
           </button>
         </div>
